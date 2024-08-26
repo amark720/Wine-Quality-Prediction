@@ -45,8 +45,14 @@ def index():
             
             obj = PredictionPipeline()
             predict = obj.predict(data)
+            if predict < 6:
+                wine_quality = "Bad"
+            elif predict == 6:
+                wine_quality = "Average"
+            else:
+                wine_quality = "Good"
 
-            return render_template('results.html', prediction = str(predict))
+            return render_template('results.html', prediction = wine_quality)
 
         except Exception as e:
             print('The Exception message is: ',e)
