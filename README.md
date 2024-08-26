@@ -1,6 +1,9 @@
 ## Wine Quality Prediction App (With Deployment using AWS)
 <img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white" /> <img alt="Pandas" src="https://img.shields.io/badge/pandas%20-%23150458.svg?&style=for-the-badge&logo=pandas&logoColor=white" /> <img alt="Flask" src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white" /> <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" /> <img alt="Github-Actions" src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white"/> <img alt="Docker" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" /> <img alt="AWS" src="https://img.shields.io/badge/AWS%20-%23FF9900.svg?&style=for-the-badge&logo=amazon-aws&logoColor=white"/> <img alt="Ubuntu" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" /> 
 
+## Description
+The data file winequality-red.csv contains a dataset of 3673 data points with 11 features and a label which ranges from 3-9.The aim of the project is to predict the quality of the wine by training the data on the given data points and then creating a separate csv file for testing and feedinf the predicted value of quality in a new column and marking it as good, average or bad. Any value of quality predicted which is less than 6 is marked as 'Bad', equal to 6 marked as 'Average' and greater than 6 is marked as'Good'.Out of 3673 data points, 3000 are used to train the model and the rest are used for testing.
+
 ## How to run?
 ### STEPS:
 
