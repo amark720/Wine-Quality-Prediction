@@ -1,19 +1,6 @@
-# End-to-end-ML-Project
+## Wine Quality Prediction App (With Deployment using AWS)
 
-
-## Workflows
-
-1. update config.yaml
-2. update schema.yaml
-3. update params.yaml
-4. update the entity 
-5. update the configuration manager in src config
-6. update the components
-7. update the pipeline
-8. update the main.py
-9. update the app.py
-
-# How to run?
+## How to run?
 ### STEPS:
 
 1. Creating python virtual environment
@@ -32,8 +19,19 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-5. Now, in browser open this link- http://127.0.0.1:8080
+5. Now, in browser open this link- `http://127.0.0.1:8080`
 
+## Workflows of project
+
+	1. update config.yaml
+	2. update schema.yaml
+	3. update params.yaml
+	4. update the entity 
+	5. update the configuration manager in src config
+	6. update the components
+	7. update the pipeline
+	8. update the main.py
+	9. update the app.py
 
 # AWS-CICD-Deployment-with-Github-Actions
 
