@@ -16,31 +16,23 @@
 # How to run?
 ### STEPS:
 
+1. Creating python virtual environment
 ```bash
-wpenv\Scripts\activate
+python -m venv venv
 ```
-
+2. Activate virtual environment
 ```bash
-conda create -n mlproj python=3.8 -y 
+venv\Scripts\activate
 ```
-
-```bash
-conda activate mlproj
-```
-
-
+3. Install all the requirements
 ```bash
 pip install -r requirements.txt
 ```
-
+4. Run the Wine Prediction App
 ```bash
 python app.py
 ```
-
-```bash
-Now open up your local host 0.0.0.0:8080
-```
-
+5. Now, in browser open this link- http://127.0.0.1:8080
 
 
 # AWS-CICD-Deployment-with-Github-Actions
@@ -68,7 +60,7 @@ Now open up your local host 0.0.0.0:8080
 
 	5. Lauch your docker image in EC2
 
-	#Policy:
+	#Policy Needed for IAM user:
 
 	1. AmazonEC2ContainerRegistryFullAccess
 
@@ -76,7 +68,8 @@ Now open up your local host 0.0.0.0:8080
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 149536498788.dkr.ecr.ap-south-1.amazonaws.com/mlproject
+    - Copy Save the URI Link from Amazon ECR page. 
+      e.g.-> 149536498788.dkr.ecr.ap-south-1.amazonaws.com/mlproject
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -101,7 +94,7 @@ Now open up your local host 0.0.0.0:8080
 	newgrp docker
 	
 # 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
+    Open Github repository>Repository setting>actions>runner>new self hosted runner> choose os> then run command one by one shown there on EC2 Ubuntu console.
 
 
 # 7. Setup github secrets:
@@ -110,15 +103,15 @@ Now open up your local host 0.0.0.0:8080
 
     AWS_SECRET_ACCESS_KEY=
 
-    AWS_REGION = us-east-1
+    AWS_REGION = ap-south-1
 
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
-    ECR_REPOSITORY_NAME = simple-app
+    ECR_REPOSITORY_NAME = wineqp-app
 
+# 8. Initiate CI/CD Pipeline and Run App:
+    
+    Push the updated code to Git and CI/CD will automatically push your updated code to EC2 Instance.
 
+    Get the app URL from EC2 instance Dashboard page and Run the app.
 
-
-
-
- git config --global user.name "entbappy"
