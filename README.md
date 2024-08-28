@@ -8,11 +8,11 @@ The data file winequality-red.csv contains a dataset of 3673 data points with 11
 ## How to run?
 ### STEPS:
 
-1. Creating python virtual environment
+1. Creating python virtual environment.
 ```bash
 python -m venv venv
 ```
-2. Activate virtual environment
+2. Activate virtual environment.
 ```bash
 venv\Scripts\activate
 ```
